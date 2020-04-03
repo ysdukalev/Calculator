@@ -78,7 +78,7 @@
                 FontSize="36"  Clicked="OnClear" />
 
         <Button Text="=" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3"
-                BackgroundColor="{x:Static local:SharedResources.OpButtonBkColor}" TextColor="White"
+                BackgroundColor="red" TextColor="White"
                 FontSize="36"  Clicked="OnCalculate" />
     </Grid>
 </ContentPage>
