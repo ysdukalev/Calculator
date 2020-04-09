@@ -59,17 +59,20 @@
         <Button Text="0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"
                BackgroundColor="White" TextColor="Black"
                FontSize="36"  Clicked="OnSelectNumber" />
-
-        <Button Text="÷" Grid.Row="1" Grid.Column="3"
+        
+        <Button Text="del" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="1"
+               BackgroundColor="White" TextColor="Black"
+               FontSize="36"  Clicked="button2_Click" />
+        <Button Text="÷" Grid.Row="2" Grid.Column="3"
                 BackgroundColor="Orange" TextColor="White"
                 FontSize="36"  Clicked="OnSelectOperator" />
-        <Button Text="×" Grid.Row="2" Grid.Column="3"
+        <Button Text="×" Grid.Row="3" Grid.Column="3"
                 BackgroundColor="Orange" TextColor="White"
                 FontSize="36"  Clicked="OnSelectOperator" />
-        <Button Text="-" Grid.Row="3" Grid.Column="3"
+        <Button Text="-" Grid.Row="4" Grid.Column="3"
                 BackgroundColor="Orange" TextColor="White"
                 FontSize="36"  Clicked="OnSelectOperator" />
-        <Button Text="+" Grid.Row="4" Grid.Column="3"
+        <Button Text="+" Grid.Row="5" Grid.Column="3"
                 BackgroundColor="Orange" TextColor="White"
                 FontSize="36"  Clicked="OnSelectOperator" />
 
@@ -77,7 +80,7 @@
                 BackgroundColor="#808080" TextColor="White"
                 FontSize="36"  Clicked="OnClear" />
 
-        <Button Text="=" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3"
+        <Button Text="=" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"
                 BackgroundColor="red" TextColor="White"
                 FontSize="36"  Clicked="OnCalculate" />
     </Grid>

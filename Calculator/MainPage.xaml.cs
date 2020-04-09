@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Text.RegularExpressions;
 
 namespace Calculator
 {
@@ -64,7 +67,18 @@ namespace Calculator
 			currentState = 1;
 			this.resultText.Text = "0";
 		}
-
+		void button2_Click(object sender, EventArgs e)
+		{
+			if (resultText.Text == "" || resultText.Text == "0")
+				return;
+			if (resultText.Text.Length == 1)
+			{
+				resultText.Text = "0";
+				return;
+			}
+			resultText.Text = resultText.Text.Remove(resultText.Text.Length - 1, 1);
+		}
+		
 		void OnCalculate(object sender, EventArgs e)
 		{
 			if (currentState == 2)
